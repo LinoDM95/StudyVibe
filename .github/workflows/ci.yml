@@ -1,0 +1,36 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v3
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Abhängigkeiten installieren
+        run: npm install
+
+      - name: Tests ausführen
+        run: npm test
+
+      # --- for deployment ---
+      # - name: Build erstellen
+      #   run: npm run build
+
+      # - name: Build-Artefakte hochladen
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: build
+      #     path: dist/
