@@ -14,6 +14,7 @@
     "@tailwindcss/vite": "^4.0.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5",
     "tailwindcss": "^4.0.6"
   },
   "devDependencies": {
@@ -21,6 +22,7 @@
     "@tailwindcss/postcss": "^4.0.6",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
+    "@types/jest": "^29.5.14",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@types/testing-library__jest-dom": "^5.14.9",
