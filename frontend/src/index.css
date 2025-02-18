@@ -1,6 +1,42 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Inter";
+  src: url("../src/assets/fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500; /* oder 'normal' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InterTight";
+  src: url("../src/assets/fonts/InterTight-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* oder 'semibold' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../src/assets/fonts/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500; /* oder 'medium' */
+  font-style: normal;
+}
+
 @theme {
+  --font-inter: Inter, "sans-serif";
+  --font-intertight: InterTight, "sans-serif";
+  --font-manrope: Manrope, "sans-serif";
+
+  --text-h1: 44px;
+  --text-h2: 35px;
+  --text-h3: 30px;
+  --text-h4: 30px;
+  --text-subtitle: 20px;
+  --text-menu: 18px;
+  --text-button-small: 16px;
+  --text-button-small2: 14px;
+  --text-body: 16px;
+  --text-body2: 14px;
+
   --color-studyvibe-dark: oklch(21.88% 0.0141 272.66); /* #181A21 */
   --color-studyvibe-gray: oklch(71.22% 0 0); /* #A2A2A2 */
   --color-studyvibe-white: oklch(99.11% 0 0); /* #FCFCFC */
@@ -17,4 +53,3 @@
   --color-studyvibe-teal2: oklch(75.93% 0.0923 168.32); /* #72C4A6 */
   --color-studyvibe-red: oklch(61.02% 0.2092 33.92); /* #E53E15 */
 }
-
