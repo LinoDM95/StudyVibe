@@ -3,22 +3,16 @@
 @font-face {
   font-family: "Inter";
   src: url("../src/assets/fonts/Inter-Medium.ttf") format("truetype");
-  font-weight: 500; /* oder 'normal' */
-  font-style: normal;
 }
 
 @font-face {
   font-family: "InterTight";
   src: url("../src/assets/fonts/InterTight-SemiBold.ttf") format("truetype");
-  font-weight: 600; /* oder 'semibold' */
-  font-style: normal;
 }
 
 @font-face {
   font-family: "Manrope";
   src: url("../src/assets/fonts/Manrope-Medium.ttf") format("truetype");
-  font-weight: 500; /* oder 'medium' */
-  font-style: normal;
 }
 
 @theme {
