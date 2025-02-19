@@ -6,7 +6,7 @@ interface ButtonProps {
   isActiveEffect?: boolean;
 }
 
-const BtnTab: React.FC<ButtonProps> = ({ label, onClick, isActiveEffect }) => {
+const BtnTech: React.FC<ButtonProps> = ({ label, onClick, isActiveEffect }) => {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -17,14 +17,14 @@ const BtnTab: React.FC<ButtonProps> = ({ label, onClick, isActiveEffect }) => {
 
   return (
     <button
-      className={`flex items-center w-auto px-4 py-0.5 rounded-sm hover:cursor-pointer  ${isActive ? "bg-studyvibe-color" : "hover:bg-studyvibe-color8 "} `}
+      className={`flex border-1 items-center w-auto px-4 py-0.5 rounded-sm hover:cursor-pointer  ${isActive ? "bg-studyvibe-color7" : " hover:bg-studyvibe-color8"} `}
       onClick={onClick}
     >
-      <span className="font-intertight text-sm text-studyvibe-color5">
+      <span className="font-intertight text-xs text-studyvibe-color5">
         {label}
       </span>
     </button>
   );
 };
 
-export default BtnTab;
+export default BtnTech;

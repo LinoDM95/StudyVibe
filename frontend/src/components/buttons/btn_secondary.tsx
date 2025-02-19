@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { FaGear } from "react-icons/fa6";
 
 interface ButtonProps {
   label: string;
@@ -7,7 +6,7 @@ interface ButtonProps {
   isActiveEffect?: boolean;
 }
 
-const BtnSubMenu: React.FC<ButtonProps> = ({
+const BtnSecondary: React.FC<ButtonProps> = ({
   label,
   onClick,
   isActiveEffect,
@@ -19,17 +18,15 @@ const BtnSubMenu: React.FC<ButtonProps> = ({
       setIsActive(isActiveEffect);
     }
   }, [isActiveEffect]);
+
   return (
     <button
-      className={`flex w-auto px-4 py-0.5 rounded-sm hover:cursor-pointer items-center gap-[12px] ${isActive ? "bg-studyvibe-color8" : "hover:bg-studyvibe-color8"} `}
+      className={` shadow-[1px_1px_0px_black] flex items-center w-auto px-4 py-1.5 rounded-full border-2 hover:cursor-pointer text-studyvibe-color5 ${isActive ? "shadow-none" : " hover:bg-studyvibe-color8 hover:shadow-[2px_2px_0px_black]"} `}
       onClick={onClick}
     >
-      <FaGear className="text-current text-lg"/>
-      <span className="font-intertight text-lg text-studyvibe-color5">
-        {label}
-      </span>
+      <span className="font-intertight text-xs ">{label}</span>
     </button>
   );
 };
 
-export default BtnSubMenu;
+export default BtnSecondary;
