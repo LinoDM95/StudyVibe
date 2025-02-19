@@ -7,7 +7,7 @@ interface ButtonProps {
   isActiveEffect?: boolean;
 }
 
-const BtnAnimation: React.FC<ButtonProps> = ({
+const BtnToggle: React.FC<ButtonProps> = ({
   label,
   onClick,
   isActiveEffect,
@@ -31,4 +31,4 @@ const BtnAnimation: React.FC<ButtonProps> = ({
   );
 };
 
-export default BtnAnimation;
+export default BtnToggle;
