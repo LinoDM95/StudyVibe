@@ -1,11 +1,17 @@
 /// <reference types="vite-plugin-svgr/client" />
-import PopUpResourceLinks from "../components/pop_ups/pop_up_resource_links";
+import ExampleMath from "../assets/icons/ExampleMath.jpg"
+import CardStatic from "../components/cards/card_static";
 
 const Homepage = () => {
   return (
     <>
   <div className="bg-red-500">Homepage</div>
-  <PopUpResourceLinks/>
+  <div className="w-150 h-100 m-5">
+  <CardStatic content={ExampleMath}/>
+
+  </div>
+
+
   </>
 );
 };

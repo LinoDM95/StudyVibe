@@ -1,11 +1,11 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 interface PopUpResourceLinksProps {
-links: {[key: string]: string};
+
 }
 
 const PopUpResourceLinks: React.FC<PopUpResourceLinksProps> = ({
-links,
+
 }) => {
 
 
