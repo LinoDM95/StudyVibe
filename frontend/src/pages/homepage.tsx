@@ -1,19 +1,14 @@
 /// <reference types="vite-plugin-svgr/client" />
-import ExampleMath from "../assets/icons/ExampleMath.jpg"
-import CardStatic from "../components/cards/card_static";
+import HeroSection from "../components/layouts/hero_section";
 
 const Homepage = () => {
   return (
-    <>
-  <div className="bg-red-500">Homepage</div>
-  <div className="w-150 h-100 m-5">
-  <CardStatic content={ExampleMath}/>
-
-  </div>
-
-
-  </>
-);
+    <div className="flex flex-col justify-center items-center min-h-screen">
+      <HeroSection />
+      <div className="flex bg-blue-100 w-full min-h-screen items-center justify-center">next content</div>
+    </div>
+  );
 };
+
 
 export default Homepage;

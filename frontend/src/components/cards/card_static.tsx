@@ -4,12 +4,12 @@ interface CardStaticProps {
 
 const CardStatic: React.FC<CardStaticProps> = ({ content }) => {
   return (
-    <div className="w-full h-full border-2 rounded-2xl shadow-[10px_10px_0px_black] ">
-      <img
-        src={content}
-        alt="Example Math"
-        className="w-full h-auto rounded-2xl"
-      />
+    <div className="w-full h-full p-4">
+      <div className="w-full h-full border-2 shadow-[10px_10px_0px_black] rounded-2xl p-6 flex flex-col justify-between">
+        <img src={content} />
+
+
+      </div>
     </div>
   );
 };
