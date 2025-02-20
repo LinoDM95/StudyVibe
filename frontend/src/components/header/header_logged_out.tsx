@@ -11,6 +11,11 @@ interface HeaderLoggedOutProps {}
 
 const HeaderLoggedOut: React.FC<HeaderLoggedOutProps> = () => {
 
+  function navToHomepage() {
+
+
+  }
+
   function handleOnClick() {
     return null
   }
@@ -19,7 +24,7 @@ const HeaderLoggedOut: React.FC<HeaderLoggedOutProps> = () => {
     <div className="flex items-center justify-between ml-[4.563rem] mr-[4.563rem] mt-[1.5rem]">
       <Logo className=""/>
       <div className="flex gap-x-[2.25rem]">
-      <BtnMainMenu label="Warum wir?" />
+      <BtnMainMenu label="Warum wir?" onClick={navToHomepage}/>
       <BtnMainMenu label="Kurse" />
       <BtnMainMenu label="Lernpfade" />
       </div>
