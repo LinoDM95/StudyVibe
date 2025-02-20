@@ -21,7 +21,7 @@ const HeaderLoggedOut: React.FC<HeaderLoggedOutProps> = () => {
   }
 
   return (
-    <div className="flex items-center justify-between ml-[4.563rem] mr-[4.563rem] mt-[1.5rem]">
+    <div className="flex items-center justify-between ">
       <Logo className=""/>
       <div className="flex gap-x-[2.25rem]">
       <BtnMainMenu label="Warum wir?" onClick={navToHomepage}/>
