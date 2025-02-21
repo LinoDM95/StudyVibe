@@ -6,7 +6,7 @@ import Header from "./components/header/header"
 
 function App() {
   return (
-    <div className="ml-[4.563rem] mr-[4.563rem] mt-[1.5rem]">
+    <div className="">
     <Router>
       <Header />
       <Routes>

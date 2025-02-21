@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 interface ButtonProps {
   label: string;
+  size?: string;
   onClick: () => void;
   isActiveEffect?: boolean;
 }
@@ -10,6 +11,7 @@ const BtnPrimary: React.FC<ButtonProps> = ({
   label,
   onClick,
   isActiveEffect,
+  size,
 }) => {
   const [isActive, setIsActive] = useState(false);
 
@@ -21,10 +23,10 @@ const BtnPrimary: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={` shadow-[1px_1px_0px_black] flex items-center w-auto px-4 py-1.5 rounded-full border-2 bg-studyvibe-color7 hover:cursor-pointer text-studyvibe-color5 ${isActive ? "bg-studyvibe-color7 shadow-none" : " hover:bg-studyvibe-color hover:shadow-[2px_2px_0px_black]"} `}
+      className={`shadow-[1px_1px_0px_black] flex items-center w-auto h-auto px-4 py-1.5 rounded-full border-2 bg-studyvibe-color7 hover:cursor-pointer text-studyvibe-color5 ${isActive ? "bg-studyvibe-color7 shadow-none" : " hover:bg-studyvibe-color hover:shadow-[2px_2px_0px_black]"} active:shadow-none`}
       onClick={onClick}
     >
-      <span className="font-intertight text-lg ">{label}</span>
+      <span className={`font-intertight ${size ? size : "text-lg"}`}>{label}</span>
     </button>
   );
 };

@@ -1,16 +1,12 @@
-import ExampleMath from "../../assets/icons/ExampleMath.jpg";
-import CardStatic from "../cards/card_static";
-import BtnPrimary from "../buttons/btn_primary";
+import ExampleMath from "../../../assets/examples/ExampleMath.jpg";
+import CardStatic from "../../cards/card_static";
+import BtnPrimary from "../../buttons/btn_primary";
 import { Typewriter } from "react-simple-typewriter";
 
 interface HeroSectionProps {}
 
 const HeroSection: React.FC<HeroSectionProps> = ({}) => {
-  const colorMap: Record<string, string> = {
-    Animationen: "text-red-500",
-    Wissen: "text-blue-500",
-    Erklärungen: "text-green-500",
-  };
+
   function handleOnClick() {}
   return (
     <div className="flex items-center m-20 w-300">
@@ -21,7 +17,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({}) => {
               words={[
                 "Lerne durch Animationen",
                 "Visualisiere Wissen",
-                "Interaktive Erklärungen",
+                "Interaktive Übungen",
               ]}
               loop={0}
               cursor
@@ -41,6 +37,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({}) => {
         </div>
       </div>
       <CardStatic content={ExampleMath} />
+      
     </div>
   );
 };
