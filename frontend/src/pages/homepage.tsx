@@ -5,9 +5,16 @@ import LPRecommendations from "../components/layouts/homepage_layouts/learning_p
 import LearningPathSection from "../components/layouts/homepage_layouts/learning_path_section";
 import WhySection from "../components/layouts/homepage_layouts/why_section";
 
+
+import DropDownLearningpaths from "../components/pop_ups/drop_down_learningpaths";
+
+
 const Homepage = () => {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen gap-10">
+
+
+      
       <HeroSection />
       <CallToAction />
       <LPRecommendations />
