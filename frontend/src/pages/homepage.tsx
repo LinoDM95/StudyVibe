@@ -6,7 +6,7 @@ import LearningPathSection from "../components/layouts/homepage_layouts/learning
 
 const Homepage = () => {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
+    <div className="flex flex-col justify-center items-center min-h-screen ">
       <HeroSection />
       <CallToAction />
       <LPRecommendations />

@@ -24,7 +24,7 @@ const BtnMainMenu: React.FC<ButtonProps> = ({
       className="relative group w-auto hover:cursor-pointer"
       onClick={onClick}
     >
-      <span className="font-intertight text-lg text-studyvibe-dark">
+      <span className="font-intertight ~text-sm/lg text-studyvibe-dark">
         {label}
       </span>
       <span className="absolute left-0 bottom-0 h-[5px] bg-studyvibe-color7 transition-all duration-300 "></span>

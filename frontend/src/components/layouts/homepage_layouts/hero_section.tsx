@@ -9,10 +9,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({}) => {
 
   function handleOnClick() {}
   return (
-    <div className="flex items-center m-20 w-300">
-      <div className="flex flex-col gap-5">
-        <div className="flex items-center text-[2.25rem] font-intertight gap-2">
-          <h1 className="font-intertight font-bold">
+    <div className="flex flex-col lg:flex-row items-center mt-20 mb-20">
+      <div className="flex flex-col gap-5 justify-center lg:justify-start">
+        <div className="flex items-center sm:text-md md:text-lg lg:text-4xl font-intertight gap-2 justify-center lg:justify-start">
+          <h1 className="font-intertight font-bold ">
             <Typewriter
               words={[
                 "Lerne durch Animationen",
@@ -28,11 +28,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({}) => {
             />
           </h1>
         </div>
-        <p className="font-inter">
+        <p className="font-inter sm:text-sm md:text-md">
           Entdecke komplexe Konzepte durch lebendige Visualisierungen und
           erlange Wissen auf eine spannende Weise.
         </p>
-        <div>
+        <div id="" className="flex justify-center lg:justify-start">
           <BtnPrimary label="Kostenlos testen" onClick={handleOnClick} />
         </div>
       </div>

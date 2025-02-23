@@ -11,8 +11,7 @@ const CallToAction: React.FC<CallToActionProps> = ({}) => {
   function handleOnClick() {}
 
   return (
-    <div className=" bg-blue-100 ">
-      <div className="flex flex-col w-screen min-h-screen items-center justify-center gap-5 mb-10">
+      <div className="bg-studyvibe-lightBlue flex flex-col w-screen min-h-screen items-center justify-center gap-5 mb-10">
         <h1 className="font-intertight text-[2.25rem]">
           Richtig lernen, richtig verstehen
         </h1>
@@ -54,7 +53,6 @@ const CallToAction: React.FC<CallToActionProps> = ({}) => {
         <img className="" src={ExampleMathVideo} />
         <BtnPrimary label="Kostenlos testen" onClick={handleOnClick} />
       </div>
-    </div>
     
   );
 };
