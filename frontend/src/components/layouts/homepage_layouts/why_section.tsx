@@ -54,7 +54,6 @@ const WhySection: React.FC<WhySectionProps> = ({}) => {
           <p className="font-inter">jede Herausforderung vorbereitet.</p>
         </div>
       </div>
-
       <BtnPrimary label="Kostenlos testen" onClick={handleOnClick} />
     </div>
   );

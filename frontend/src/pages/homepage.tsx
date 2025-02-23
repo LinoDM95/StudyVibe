@@ -7,13 +7,13 @@ import WhySection from "../components/layouts/homepage_layouts/why_section";
 
 const Homepage = () => {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen gap-20">
+    <div className="flex flex-col justify-center items-center min-h-screen gap-10">
       <HeroSection />
       <CallToAction />
       <LPRecommendations />
       <LearningPathSection />
       <WhySection />
-      
+
     </div>
   );
 };
