@@ -8,7 +8,7 @@ const LearningPathSection: React.FC<LearningPathSectionProps> = ({}) => {
 
   }
   return (
-    <div className="flex flex-col items-center mt-20 gap-10">
+    <div className="flex flex-col items-center gap-10">
       <Timeline />
       <div className="flex flex-col font-manrope">
         <span>Mit der Möglichkeit, unsere Plattform für 5 Tage kostenlos zu nutzen, können</span>

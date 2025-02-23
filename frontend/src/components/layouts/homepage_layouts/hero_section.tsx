@@ -12,7 +12,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({}) => {
     <div className="flex flex-col lg:flex-row items-center mt-20">
       <div className="flex flex-col gap-5 justify-center lg:justify-start">
         <div className="flex items-center font-intertight gap-2 justify-center lg:justify-start">
-          <h1 className="font-intertight font-bold text-2xl md:text-4xl">
+          <h1 className="font-intertight text-2xl md:text-4xl">
             <Typewriter
               words={[
                 "Lerne durch Animationen",
