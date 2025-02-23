@@ -11,7 +11,7 @@ const CallToAction: React.FC<CallToActionProps> = ({}) => {
   function handleOnClick() {}
 
   return (
-    <div className="bg-studyvibe-lightBlue flex flex-col w-screen min-h-screen items-center justify-center gap-5 mb-10">
+    <div className="bg-studyvibe-lightBlue flex flex-col w-screen min-h-screen items-center justify-center gap-5 mt-20">
       <h1 className="font-intertight text-[2.25rem]">
         Richtig lernen, richtig verstehen
       </h1>

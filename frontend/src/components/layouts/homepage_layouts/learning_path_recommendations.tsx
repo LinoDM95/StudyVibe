@@ -8,7 +8,7 @@ const LPRecommendations: React.FC<LPRecommendationsProps> = ({}) => {
   function handleOnClick() {}
 
   return (
-    <div className="flex flex-col w-screen min-h-screen items-center justify-center gap-20">
+    <div className="flex flex-col w-screen min-h-screen items-center justify-center gap-20 mt-20">
       <h1 className="flex text-2xl font-intertight md:text-[2.25rem]">
         Unsere Top-Empfehlungen für Ihre Lernreise
       </h1>
