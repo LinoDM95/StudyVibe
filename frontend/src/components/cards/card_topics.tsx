@@ -26,12 +26,19 @@
  * ? />
  */
 
+const levels = [
+  { label: "#Leicht", color: "bg-studyvibe-color3" },
+  { label: "#Mittel", color: "bg-studyvibe-color11" },
+  { label: "#Schwer", color: "bg-studyvibe-color9" },
+];
+
 interface CardHoverEffectProps {
-  svg?: any;
+  svg?: React.ReactNode;
   title: string;
   description: string;
   topic: string;
-  level: number;
+  level: 1 | 2 | 3;
+  onClick?: () => void;
 }
 
 const CardHoverEffect: React.FC<CardHoverEffectProps> = ({
@@ -40,27 +47,27 @@ const CardHoverEffect: React.FC<CardHoverEffectProps> = ({
   description,
   topic,
   level,
+  onClick,
 }) => {
-  const levels = [
-    { label: "#Leicht", color: "bg-studyvibe-color3" },
-    { label: "#Mittel", color: "bg-studyvibe-color11" },
-    { label: "#Schwer", color: "bg-studyvibe-color9" },
-  ];
-
   const selectedLevel = levels[level - 1];
-//w-[250px] md:w-[300px] h-[400px] md:h-[500px]
+
   return (
-    <div className="w-full h-full flex flex-col p-6 border-2 shadow-[3px_3px_0px_black] rounded-2xl gap-10 hover:shadow-[10px_10px_0px_black] transition-all duration-300 hover:cursor-pointer active:shadow-none">
+    <div
+      className="w-full sm:max-w-sm flex flex-col p-6 border-2 shadow-[3px_3px_0px_black] rounded-2xl gap-10 hover:shadow-[10px_10px_0px_black] transition-all duration-300 hover:cursor-pointer active:shadow-none"
+      onClick={onClick}
+    >
       <div className="flex flex-col items-center flex-grow gap-3">
         {svg}
         <h1 className="font-intertight text-center text-2xl">{title}</h1>
         <p className="font-inter text-center">{description}</p>
       </div>
       <div className="flex mt-auto gap-3">
-      <span className={`pl-1.5 pr-1.5 bg-studyvibe-color10 rounded-sm font-manrope `}>
+        <span className={`px-2 bg-studyvibe-color10 rounded-sm font-manrope `}>
           #{topic}
         </span>
-        <span className={`pl-1.5 pr-1.5 rounded-sm font-manrope ${selectedLevel.color}`}>
+        <span
+          className={`pl-1.5 pr-1.5 rounded-sm font-manrope ${selectedLevel.color}`}
+        >
           {selectedLevel.label}
         </span>
       </div>

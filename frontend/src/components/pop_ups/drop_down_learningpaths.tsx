@@ -1,4 +1,5 @@
 import DropDownBase from "./drop_down_base";
+import { Link } from "react-router-dom";
 
 import Math from "../../assets/icons/Math.svg?react";
 import Physics from "../../assets/icons/Physics.svg?react";
@@ -65,7 +66,9 @@ const DropDownLearningpaths: React.FC<DropDownLearningpathsProps> = ({
             <GraduateHat />
             <nav>
               <ul>
-                <li className="font-intertight">Alle Lernpfade</li>
+                <li className="font-intertight">
+                  <Link to="/all-learning-paths">Alle Lernpfade</Link>
+                </li>
               </ul>
             </nav>
           </div>

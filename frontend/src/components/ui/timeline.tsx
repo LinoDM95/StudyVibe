@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import TimelineGroup from "../../assets/layouts/Group 77.svg?react";
 interface TimelineProps {}
 

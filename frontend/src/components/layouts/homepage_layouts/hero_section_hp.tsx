@@ -3,10 +3,9 @@ import CardStatic from "../../cards/card_static";
 import BtnPrimary from "../../buttons/btn_primary";
 import { Typewriter } from "react-simple-typewriter";
 
-interface HeroSectionProps {}
+interface HeroSectionHPProps {}
 
-const HeroSection: React.FC<HeroSectionProps> = ({}) => {
-
+const HeroSectionHP: React.FC<HeroSectionHPProps> = ({}) => {
   function handleOnClick() {}
   return (
     <div className="flex flex-col lg:flex-row items-center mt-20">
@@ -37,9 +36,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({}) => {
         </div>
       </div>
       <CardStatic content={ExampleMath} />
-      
     </div>
   );
 };
 
-export default HeroSection;
+export default HeroSectionHP;

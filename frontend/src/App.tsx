@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //Pages
 import Homepage from "./pages/homepage";
 import AllLearningPaths from "./pages/all_learning_paths";
+import AllCourses from "./pages/all_courses";
+import OOPS from "./pages/oops";
 //Provider
 
 //Components
@@ -18,6 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/all-learning-paths" element={<AllLearningPaths />} />
+          <Route path="/all-courses" element={<AllCourses />} />
+          <Route path="/oops" element={<OOPS />} />
         </Routes>
         <Footer />
       </Router>
