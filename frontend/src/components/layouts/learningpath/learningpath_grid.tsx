@@ -2,7 +2,44 @@ import React, { ReactNode, useState } from "react";
 import { motion } from "framer-motion";
 import BtnToggle from "../../buttons/btn_toggle";
 import BtnPrimary from "../../buttons/btn_primary";
-
+/**
+ * ! LearningPathGrid
+ *
+ * This React component serves as a grid for displaying learning paths.
+ * It allows filtering elements by difficulty level and includes a "Show more" feature.
+ *
+ * @component
+ * ? @example
+ * ```tsx
+ * <LearningPathGrid title="My Learning Path">
+ *   <LearningModule difficulty={1} title="Programming Basics" />
+ *   <LearningModule difficulty={2} title="Advanced Techniques" />
+ *   <LearningModule difficulty={3} title="Expert Knowledge" />
+ * </LearningPathGrid>
+ * ```
+ *
+ * @param {string} title - The title of the grid.
+ * @param {ReactNode} children - The contained learning modules or other components.
+ * @param {number} [itemsPerPage=6] - The number of visible items per page (default: 6).
+ *
+ * ? @example
+ * ```tsx
+ * <LearningPathGrid title="JavaScript Learning Path" itemsPerPage={4}>
+ *   <LearningModule difficulty={1} title="Basics" />
+ *   <LearningModule difficulty={2} title="Async & Await" />
+ *   <LearningModule difficulty={3} title="Performance Optimization" />
+ * </LearningPathGrid>
+ * ```
+ *
+ * ? @example
+ * ```tsx
+ * <LearningPathGrid title="Python for Beginners">
+ *   <LearningModule difficulty={1} title="Syntax & Basics" />
+ *   <LearningModule difficulty={2} title="OOP with Python" />
+ *   <LearningModule difficulty={3} title="Data Analysis" />
+ * </LearningPathGrid>
+ * ```
+ */
 interface LearningPathGridProps {
   title: string;
   children: ReactNode;
