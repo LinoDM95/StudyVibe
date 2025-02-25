@@ -1,5 +1,5 @@
-import { ReactNode, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { ReactNode, useState } from "react";
+import { motion } from "framer-motion";
 import BtnToggle from "../../buttons/btn_toggle";
 import BtnPrimary from "../../buttons/btn_primary";
 
@@ -14,9 +14,25 @@ const LearningPathGrid: React.FC<LearningPathGridProps> = ({
   children,
   itemsPerPage = 6,
 }) => {
+  const [selectedDifficulty, setSelectedDifficulty] = useState<number>();
+
   const [showAll, setShowAll] = useState(false);
-  const items = Array.isArray(children) ? children : [children];
-  const visibleItems = showAll ? items : items.slice(0, itemsPerPage);
+
+  const allItems = React.Children.toArray(children);
+
+  const filteredItems = selectedDifficulty
+    ? allItems.filter((child) => {
+        if (React.isValidElement(child)) {
+          const element = child as React.ReactElement<{ difficulty?: number }>;
+          return element.props.difficulty === selectedDifficulty;
+        }
+        return false;
+      })
+    : allItems;
+
+  const visibleItems = showAll
+    ? filteredItems
+    : filteredItems.slice(0, itemsPerPage);
 
   return (
     <div className="space-y-4">
@@ -26,18 +42,30 @@ const LearningPathGrid: React.FC<LearningPathGridProps> = ({
         <div className="flex flex-wrap gap-2">
           <BtnToggle
             label="Grundlagen"
-            onClick={() => console.log("Grundlagen")}
+            onClick={() =>
+              setSelectedDifficulty(selectedDifficulty === 1 ? undefined : 1)
+            }
+            isActiveEffect={selectedDifficulty === 1}
           />
           <BtnToggle
             label="Fortgeschritten"
-            onClick={() => console.log("Fortgeschritten")}
+            onClick={() =>
+              setSelectedDifficulty(selectedDifficulty === 2 ? undefined : 2)
+            }
+            isActiveEffect={selectedDifficulty === 2}
           />
-          <BtnToggle label="Experte" onClick={() => console.log("Experte")} />
+          <BtnToggle
+            label="Experte"
+            onClick={() =>
+              setSelectedDifficulty(selectedDifficulty === 3 ? undefined : 3)
+            }
+            isActiveEffect={selectedDifficulty === 3}
+          />
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {visibleItems.map((item, index) => (
+        {visibleItems.map((child, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 10 }}
@@ -46,12 +74,12 @@ const LearningPathGrid: React.FC<LearningPathGridProps> = ({
             transition={{ duration: 0.3 }}
             className="col-span-1 row-span-1"
           >
-            {item}
+            {child}
           </motion.div>
         ))}
       </div>
 
-      {items.length > itemsPerPage && (
+      {filteredItems.length > itemsPerPage && (
         <div className="flex justify-center">
           <BtnPrimary
             label={showAll ? "Weniger anzeigen" : "Mehr anzeigen"}

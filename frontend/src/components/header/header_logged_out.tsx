@@ -7,42 +7,69 @@ import DropDownLearningpaths from "../pop_ups/drop_down_learningpaths";
 import DropDownCoursePaths from "../pop_ups/drop_down_coursepaths";
 import Logo from "../../assets/icons/Logo.svg?react";
 
+/**
+ * HeaderLoggedOut Component
+ * ==========================
+ * This component represents the **header** for users who are not logged in.
+ * It includes navigation buttons, a logo, and dropdown menus for **learning paths** and **course paths**.
+ *
+ * @prop {none} HeaderLoggedOutProps - This component does not accept any props.
+ */
+
 interface HeaderLoggedOutProps {}
 
 const HeaderLoggedOut: React.FC<HeaderLoggedOutProps> = () => {
+  // React Router navigation hook
   const navigate = useNavigate();
 
+  // State to manage the visibility of the dropdowns
   const [isActivLearningPaths, setIsActivLearningPaths] = useState(false);
   const [isActivCoursePaths, setIsActivCoursePaths] = useState(false);
 
+  /**
+   * Toggles the Course Paths dropdown.
+   */
   function openCoursePaths() {
     setIsActivCoursePaths((prev) => !prev);
   }
 
+  /**
+   * Toggles the Learning Paths dropdown.
+   */
   function openLearningPaths() {
     setIsActivLearningPaths((prev) => !prev);
   }
 
+  /**
+   * Updates the Course Paths dropdown state when its visibility changes.
+   *
+   * @param {boolean} isActive - The updated visibility state of the Course Paths dropdown.
+   */
   function handleCoursePathsChange(isActive: boolean) {
     setIsActivCoursePaths(isActive);
   }
 
+  /**
+   * Updates the Learning Paths dropdown state when its visibility changes.
+   *
+   * @param {boolean} isActive - The updated visibility state of the Learning Paths dropdown.
+   */
   function handleLearningPathsChange(isActive: boolean) {
     setIsActivLearningPaths(isActive);
   }
 
   return (
     <>
-      <div className="flex flex-wrap items-center justify-between gap-x-5 sm:gap-x-9 p-4">
-        <Logo className="block md:block w-24" />
-
-        <div className="flex flex-wrap gap-x-3 sm:gap-x-[2.25rem] justify-center">
+      <div className="flex items-center justify-between gap-15">
+        <Logo className="hidden md:block" />
+        <div className="flex gap-x-[2.25rem]">
           <BtnMainMenu label="Warum wir?" onClick={() => navigate("/")} />
 
-          <div className="relative w-full md:w-auto">
+          {/* Course Paths Button & Dropdown */}
+          <div className="relative">
             <BtnMainMenu label="Kurse" onClick={openCoursePaths} />
             {isActivCoursePaths && (
-              <div className="absolute w-full md:w-auto">
+              <div className="absolute">
                 <DropDownCoursePaths
                   openStatus={isActivCoursePaths}
                   onChange={handleCoursePathsChange}
@@ -51,10 +78,11 @@ const HeaderLoggedOut: React.FC<HeaderLoggedOutProps> = () => {
             )}
           </div>
 
-          <div className="relative w-full md:w-auto">
+          {/* Learning Paths Button & Dropdown */}
+          <div className="relative">
             <BtnMainMenu label="Lernpfade" onClick={openLearningPaths} />
             {isActivLearningPaths && (
-              <div className="absolute z-50 w-full md:w-auto">
+              <div className="absolute z-50">
                 <DropDownLearningpaths
                   openStatus={isActivLearningPaths}
                   onChange={handleLearningPathsChange}
@@ -63,8 +91,7 @@ const HeaderLoggedOut: React.FC<HeaderLoggedOutProps> = () => {
             )}
           </div>
         </div>
-
-        <div className="flex flex-col sm:flex-row gap-3 items-center">
+        <div className="flex gap-3">
           <BtnPrimary label="Registrieren" onClick={() => {}} />
           <BtnSecondary label="Anmelden" onClick={() => {}} />
         </div>
