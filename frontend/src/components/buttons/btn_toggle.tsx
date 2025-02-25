@@ -22,7 +22,7 @@ const BtnToggle: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`flex gap-2 items-center w-auto px-4 py-0.5 rounded-full border-1 hover:cursor-pointer text-studyvibe-color5 ${isActive ? "bg-studyvibe-color" : "hover:bg-studyvibe-color8 "} `}
+      className={`inline-flex gap-2 items-center w-auto px-4 py-0.5 rounded-full border-1 hover:cursor-pointer text-studyvibe-color5 ${isActive ? "bg-studyvibe-color" : "hover:bg-studyvibe-color8 "} `}
       onClick={onClick}
     >
       <span className="font-intertight text-xs">{label}</span>
