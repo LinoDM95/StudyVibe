@@ -71,7 +71,7 @@ const WhySection: React.FC<WhySectionProps> = ({}) => {
         <Teacher className="hidden md:block" />
         <div className="flex flex-col">
           <h1 className="font-intertight text-lg md:text-2xl">
-            Unsere Lehrplan im Überblick
+            Unser Lehrplan im Überblick
           </h1>
           <p className="font-inter">
             Unser Lehrplan umfasst alle relevanten mathematischen

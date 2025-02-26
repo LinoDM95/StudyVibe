@@ -26,7 +26,7 @@ const DropDownLearningpaths: React.FC<DropDownLearningpathsProps> = ({
                 <h1 className="font-intertight">Mathe</h1>
                 <nav>
                   <ul className="flex flex-col gap-1 font-manrope">
-                    <li>Vektoren</li>
+                    <Link to="/learningpath-example">Beispiel Lernpfad</Link>
                     <li>Integralrechnung</li>
                     <li>Funktionen</li>
                   </ul>

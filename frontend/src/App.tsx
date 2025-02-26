@@ -1,6 +1,7 @@
 import "./App.css";
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LearningPathExample from "./pages/single_learning_path_example";
 //Pages
 import Homepage from "./pages/homepage";
 import AllLearningPaths from "./pages/all_learning_paths";
@@ -16,10 +17,14 @@ function App() {
   return (
     <div className="">
       <Router>
-          <Header />
+        <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/all-learning-paths" element={<AllLearningPaths />} />
+          <Route
+            path="/learningpath-example"
+            element={<LearningPathExample />}
+          />
           <Route path="/all-courses" element={<AllCourses />} />
           <Route path="/oops" element={<OOPS />} />
         </Routes>

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Mathematik für Anfänger",
+    "description": "Dieser Lernpfad führt dich durch die Grundlagen der Mathematik, beginnend mit Algebra und Analysis.",
+    "subject": "Mathematik",
+    "difficulty": 1,
+    "total_duration": 210,
+    "courses": [1, 2]
+  },
+  {
+    "id": 2,
+    "title": "Fortgeschrittene Mathematik",
+    "description": "Ein intensiver Kurs für fortgeschrittene Mathematik mit Linearen Algebra und komplexen Ableitungen.",
+    "subject": "Mathematik",
+    "difficulty": 2,
+    "total_duration": 240,
+    "courses": [3, 2]
+  },
+  {
+    "id": 3,
+    "title": "Komplette Mathematik-Reise",
+    "description": "Dieser umfassende Lernpfad deckt alle wichtigen mathematischen Grundlagen und fortgeschrittene Themen ab.",
+    "subject": "Mathematik",
+    "difficulty": 3,
+    "total_duration": 360,
+    "courses": [1, 2, 3]
+  },
+  {
+    "id": 4,
+    "title": "Grundlagen der Programmierung",
+    "description": "Ein Einführungskurs in die Grundlagen der Informatik mit praktischen Programmieraufgaben.",
+    "subject": "Informatik",
+    "difficulty": 1,
+    "total_duration": 380,
+    "courses": [4, 5]
+  },
+  {
+    "id": 5,
+    "title": "Algorithmen und Datenstrukturen",
+    "description": "Lerne die Prinzipien der Algorithmen und Datenstrukturen in der Informatik.",
+    "subject": "Informatik",
+    "difficulty": 2,
+    "total_duration": 200,
+    "courses": [5]
+  },
+  {
+    "id": 6,
+    "title": "Physik für Einsteiger",
+    "description": "Grundlagen der Mechanik und Energie in der Physik.",
+    "subject": "Physik",
+    "difficulty": 1,
+    "total_duration": 220,
+    "courses": [6]
+  },
+  {
+    "id": 7,
+    "title": "Quantenmechanik für Fortgeschrittene",
+    "description": "Ein tiefer Einblick in die Prinzipien der Quantenphysik und ihre Anwendungen.",
+    "subject": "Physik",
+    "difficulty": 3,
+    "total_duration": 300,
+    "courses": [7]
+  }
+]

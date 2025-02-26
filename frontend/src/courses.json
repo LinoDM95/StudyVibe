@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "title": "Grundlagen der Algebra",
+    "description": "Lerne die Grundlagen der Algebra mit einfachen Erklärungen und Beispielen.",
+    "subject": "Mathematik",
+    "difficulty": 1,
+    "duration": 120,
+    "videos": [
+      {
+        "id": 101,
+        "title": "Einführung in Algebra",
+        "video_url": "https://www.youtube.com/embed/ABCDEFG",
+        "thumbnail_url": "https://example.com/thumbnails/algebra1.jpg",
+        "length": 15
+      },
+      {
+        "id": 102,
+        "title": "Lineare Gleichungen",
+        "video_url": "https://www.youtube.com/embed/HIJKLMN",
+        "thumbnail_url": "https://example.com/thumbnails/algebra2.jpg",
+        "length": 20
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Analysis I - Grundlagen der Ableitung",
+    "description": "Einführung in Ableitungen und ihre Anwendungen.",
+    "subject": "Mathematik",
+    "difficulty": 2,
+    "duration": 90,
+    "videos": [
+      {
+        "id": 201,
+        "title": "Ableitungsregeln",
+        "video_url": "https://www.youtube.com/embed/XYZ1234",
+        "thumbnail_url": "https://example.com/thumbnails/analysis1.jpg",
+        "length": 25
+      },
+      {
+        "id": 202,
+        "title": "Anwendungen der Ableitung",
+        "video_url": "https://www.youtube.com/embed/XYZ5678",
+        "thumbnail_url": "https://example.com/thumbnails/analysis2.jpg",
+        "length": 30
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Lineare Algebra - Matrizen und Vektoren",
+    "description": "Verständnis von Matrizen, Vektoren und linearen Gleichungssystemen.",
+    "subject": "Mathematik",
+    "difficulty": 3,
+    "duration": 150,
+    "videos": [
+      {
+        "id": 301,
+        "title": "Vektoren und Matrizen",
+        "video_url": "https://www.youtube.com/embed/VECMAT1",
+        "thumbnail_url": "https://example.com/thumbnails/linearealgebra1.jpg",
+        "length": 40
+      },
+      {
+        "id": 302,
+        "title": "Lineare Abbildungen",
+        "video_url": "https://www.youtube.com/embed/VECMAT2",
+        "thumbnail_url": "https://example.com/thumbnails/linearealgebra2.jpg",
+        "length": 35
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Grundlagen der Programmierung",
+    "description": "Einführung in die Programmierung mit Python und grundlegenden Konzepten.",
+    "subject": "Informatik",
+    "difficulty": 1,
+    "duration": 180,
+    "videos": [
+      {
+        "id": 401,
+        "title": "Variablen und Datentypen",
+        "video_url": "https://www.youtube.com/embed/PYTHON1",
+        "thumbnail_url": "https://example.com/thumbnails/python1.jpg",
+        "length": 30
+      },
+      {
+        "id": 402,
+        "title": "Schleifen und Bedingungen",
+        "video_url": "https://www.youtube.com/embed/PYTHON2",
+        "thumbnail_url": "https://example.com/thumbnails/python2.jpg",
+        "length": 35
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Datenstrukturen und Algorithmen",
+    "description": "Lerne die wichtigsten Algorithmen und Datenstrukturen in der Informatik.",
+    "subject": "Informatik",
+    "difficulty": 2,
+    "duration": 200,
+    "videos": [
+      {
+        "id": 501,
+        "title": "Sortieralgorithmen",
+        "video_url": "https://www.youtube.com/embed/ALGO1",
+        "thumbnail_url": "https://example.com/thumbnails/algo1.jpg",
+        "length": 45
+      },
+      {
+        "id": 502,
+        "title": "Datenstrukturen - Listen & Bäume",
+        "video_url": "https://www.youtube.com/embed/ALGO2",
+        "thumbnail_url": "https://example.com/thumbnails/algo2.jpg",
+        "length": 50
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Grundlagen der Physik",
+    "description": "Einführung in die grundlegenden Konzepte der Physik.",
+    "subject": "Physik",
+    "difficulty": 1,
+    "duration": 220,
+    "videos": [
+      {
+        "id": 601,
+        "title": "Kräfte und Bewegung",
+        "video_url": "https://www.youtube.com/embed/PHYSIK1",
+        "thumbnail_url": "https://example.com/thumbnails/physik1.jpg",
+        "length": 50
+      },
+      {
+        "id": 602,
+        "title": "Energie und Impuls",
+        "video_url": "https://www.youtube.com/embed/PHYSIK2",
+        "thumbnail_url": "https://example.com/thumbnails/physik2.jpg",
+        "length": 45
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Quantenmechanik für Fortgeschrittene",
+    "description": "Vertiefung der Quantenmechanik und ihrer Anwendungen.",
+    "subject": "Physik",
+    "difficulty": 3,
+    "duration": 300,
+    "videos": [
+      {
+        "id": 701,
+        "title": "Grundlagen der Quantenmechanik",
+        "video_url": "https://www.youtube.com/embed/QUANTUM1",
+        "thumbnail_url": "https://example.com/thumbnails/quantum1.jpg",
+        "length": 60
+      },
+      {
+        "id": 702,
+        "title": "Wellenfunktion und Schrödinger-Gleichung",
+        "video_url": "https://www.youtube.com/embed/QUANTUM2",
+        "thumbnail_url": "https://example.com/thumbnails/quantum2.jpg",
+        "length": 70
+      }
+    ]
+  }
+]
