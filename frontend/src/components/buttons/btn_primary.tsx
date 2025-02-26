@@ -28,7 +28,7 @@ const BtnPrimary: React.FC<ButtonProps> = ({
       } active:shadow-none w-fit`}
       onClick={onClick}
     >
-      <span className="font-intertight text-sm">{label}</span>
+      <span className="font-intertight text-lg ">{label}</span>
     </button>
   );
 };
