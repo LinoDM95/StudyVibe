@@ -44,6 +44,7 @@ const LearningpathLayout: React.FC<LearningpathLayoutProps> = ({
             title={course.title}
             text={course.text}
             img={course.img}
+            navPath="/"
           />
         ))}
       </div>

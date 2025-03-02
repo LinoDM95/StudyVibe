@@ -24,15 +24,18 @@ const CardLearningPathLarge: React.FC<CardLearningPathLargeProps> = ({
   img,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row border-2 rounded-lg m-5 sm:m-10 p-4 sm:p-6 md:p-10 shadow-[2px_2px_0px_black] gap-10">
+    <div className="flex flex-col md:flex-row border-2 rounded-lg m-5 sm:m-10 p-4 sm:p-6 md:p-10 shadow-[2px_2px_0px_black] gap-10 py-50">
       {/* Linke Seite - Text */}
-      <div className="flex flex-col gap-15 flex-1">
+      <div className="flex flex-col gap-15 flex-1 ">
         {/* Titel & Beschreibung */}
         <div className="flex flex-col gap-3">
           <h1 className="font-intertight text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
             {title}
           </h1>
-          <p className="font-inter text-sm sm:text-base">{text}</p>
+          <p className="font-inter text-sm sm:text-base max-w-[600px] leading-relaxed line-clamp-5">
+  {text}
+</p>
+
         </div>
 
         {/* Details (Schwierigkeit, Dauer, Anzahl Kurse) */}
