@@ -12,13 +12,9 @@ import Logo from "../../assets/icons/Logo.svg?react";
  * ==========================
  * This component represents the **header** for users who are not logged in.
  * It includes navigation buttons, a logo, and dropdown menus for **learning paths** and **course paths**.
- *
- * @prop {none} HeaderLoggedOutProps - This component does not accept any props.
  */
 
-interface HeaderLoggedOutProps {}
-
-const HeaderLoggedOut: React.FC<HeaderLoggedOutProps> = () => {
+const HeaderLoggedOut = () => {
   // React Router navigation hook
   const navigate = useNavigate();
 

@@ -12,7 +12,7 @@ interface CardLearningPathLargeProps {
   difficulty: 1 | 2 | 3;
   duration: number;
   countCurses: number;
-  img?: any;
+  img?: string;
 }
 
 const CardLearningPathLarge: React.FC<CardLearningPathLargeProps> = ({

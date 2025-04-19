@@ -3,9 +3,7 @@ import CardStatic from "../../cards/card_static";
 import BtnPrimary from "../../buttons/btn_primary";
 import { Typewriter } from "react-simple-typewriter";
 
-interface HeroSectionHPProps {}
-
-const HeroSectionHP: React.FC<HeroSectionHPProps> = ({}) => {
+const HeroSectionHP: React.FC = () => {
   function handleOnClick() {}
   return (
     <div className="flex flex-col lg:flex-row items-center mt-20">
